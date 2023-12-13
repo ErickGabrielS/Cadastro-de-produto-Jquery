@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Exemplo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div id="menu">
+        <ul class="contentmenu">
+            <button href="#" id="lista1">Lista 1</button>
+            <button href="#" id="lista2">Lista 2</button>
+            <button href="#" id="lista3">Lista 3</button>
+        </ul>
+        <fieldset>
+            <span id="usuario">Usuário: <strong id="user"></strong></span>
+            <button id="sair">Sair</button>
+        </fieldset>
+
+    </div>
+    <div id="conteudo">
+        <h1 class="title">Cadastro de produtos e vendas</h1>
+        <p></p>
+    </div>
+    <div id="login">
+        <h1>Login</h1>
+        <form>
+            <label for="usuarioInput">Usuário:</label>
+            <input type="text" id="usuarioInput" name="usuarioInput" required>
+            <label for="senhaInput">Senha:</label>
+            <input type="password" id="senhaInput" name="senhaInput" required>
+            <button type="button" id="entrar">Entrar</button>
+        </form>
+        <p id="erro">Usuário ou senha inválidos.</p>
+    </div>
+
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span><button id="close1">X</button></span>
+            <h2>Lista 1</h2>
+            <form id="form1">
+                <label for="nome1">Nome:</label>
+                <input type="text" id="nome" name="nome1" required>
+                <label for="email1">Email:</label>
+                <input type="email" id="email" name="email1" required>
+                <label for="telefone1">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone1" required>
+                <label for="endereco1">Endereço:</label>
+                <input type="text" id="endereco" name="endereco1" required>
+                <button type="submit" id="salvar1">Salvar</button>
+                <button type="button" id="excluir1">Excluir</button>
+            </form>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span><button id="close2">X</button></span>
+            <h2>Lista 2</h2>
+            <form id="form2">
+                <label for="nome2">Nome:</label>
+                <input type="text" id="nome" name="nome2" required>
+                <label for="preco2">Preço:</label>
+                <input type="number" id="preco" name="preco2" required>
+                <label for="quantidade2">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade2" required>
+                <label for="categoria2">Categoria:</label>
+                <select id="categoria2" name="categoria" required>
+                    <option value="Superior">Vestes superior</option>
+                    <option value="Inferior">Vestes inferior</option>
+                    <option value="Intima">Vestes íntimas</option>
+                </select>
+                <button type="submit" id="salvar2">Salvar</button>
+                <button type="button" id="excluir2">Excluir</button>
+            </form>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span><button id="close3">X</button></span>
+            <h2>Lista 3</h2>
+            <form id="form3">
+                <label for="nome3">Nome:</label>
+                <input type="text" id="nome" name="nome3" required>
+                <label for="data3">Data:</label>
+                <input type="date" id="data" name="data3" required>
+                <label for="status3">Status:</label>
+                <input type="text" id="status" name="status3" required>
+                <label for="valor3">Valor:</label>
+                <input type="number" id="valor" name="valor3" required>
+                <button type="submit" id="salvar3">Salvar</button>
+                <button type="button" id="excluir3">Excluir</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
